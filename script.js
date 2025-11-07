@@ -2,7 +2,7 @@
 
 let arr = [];
 let arrMaggiore50 = [];
-let media;
+let media = 0;
 let min;
 let max;
 for (let i = 0; i < 101; i++) {
@@ -32,6 +32,6 @@ console.log("Minimo: " + min);
 console.log("Massimo: " + max);
 let info = document.getElementById("informazioni");
 function stampa() {
-    info.innerHTML = "Array: | " + arr.join(" | ") + "| <br>" + "Numeri maggiori di 50 presenti nell'array: | " + arrMaggiore50.join(" | ") + "| <br>" + "Valore minimo: " + min + "<br>" + "Valore massimo: " + max;
+    info.innerHTML = "Array: | " + arr.join(" | ") + "| <br>" + "Numeri maggiori di 50 presenti nell'array: | " + arrMaggiore50.join(" | ") + "| <br>" + "Valore minimo: " + min + "<br>" + "Valore massimo: " + max + "<br>" + "Media: " + media;
 }
 
